@@ -6,10 +6,10 @@ language: ruby
 cache: bundler
 rbenv:
 - 2.5.3
+dist: xenial
 addons:
   postgresql: 9.6
   chrome: stable
-dist: xenial
 script:
 - yarn
 - bundle exec rails db:{create,migrate} RAILS_ENV=test
