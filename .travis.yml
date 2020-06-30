@@ -3,6 +3,7 @@
   - gem install bundler
 
 language: ruby
+cache: bundler
 rbenv:
 - 2.5.3
 addons:
