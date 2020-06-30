@@ -1,5 +1,5 @@
-  before_install:
-  - gem install bundler
+before_install:
+- gem install bundler
 
 language: ruby
 cache: bundler
@@ -8,7 +8,7 @@ rbenv:
 addons:
   postgresql: 9.6
   chrome: stable
-dist: trusty
+dist: xenial
 script:
 - yarn
 - bundle exec rails db:{create,migrate} RAILS_ENV=test
